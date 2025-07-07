@@ -1,1 +1,159 @@
-<p>gentzilla</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>gentZilla Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 15px;
+      animation: zoomIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5em;
+      color: #00e6e6;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px #00e6e6;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #cccccc;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 20px;
+      animation: slideUp 2s ease-in-out;
+    }
+
+    .member {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #00e6e6;
+      border-radius: 15px;
+      width: 220px;
+      padding: 25px 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      backdrop-filter: blur(5px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00e6e6;
+    }
+
+    .member h3 {
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-size: 1.2em;
+      color: #00e6e6;
+    }
+
+    .member p {
+      font-size: 0.9em;
+      color: #e0e0e0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace 'your-logo.png' with your actual logo file path -->
+    <img src="logo.png" alt="genZilla Logo">
+    <h1>GenZilla</h1>
+    <p>Meet our powerhouse team!</p>
+  </header>
+
+  <section class="team">
+    <div class="member">
+      <h3>Krishnapriya T A</h3>
+      <p>Captain</p>
+    </div>
+    <div class="member">
+      <h3>Shravan K</h3>
+      <p>Vice Captain</p>
+    </div>
+    <div class="member">
+      <h3>Sandhra M M</h3>
+      <p>Team Member</p>
+    </div>
+    <div class="member">
+      <h3>Senna Mariya</h3>
+      <p>Team Member</p>
+    </div>
+    <div class="member">
+      <h3>Sadiya P R</h3>
+      <p>Team Member</p>
+    </div>
+    <div class="member">
+      <h3>Poojith Raj</h3>
+      <p>Team Member</p>
+    </div>
+    <div class="member">
+      <h3>Tony Tomy</h3>
+      <p>Team Member</p>
+    </div>
+    <div class="member">
+      <h3>Kiran G.</h3>
+      <p>Team Member</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 GenZilla Team | Designed with 💙
+  </footer>
+</body>
+</html>
